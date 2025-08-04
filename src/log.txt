@@ -1,0 +1,17 @@
+
+C:\Users\li_we\Documents\TraeProjects\MoonTV\src\middleware.ts
+  3:34  warning  'request' is defined but never used. Allowed unused args must match /^_/u  unused-imports/no-unused-vars
+
+✖ 4 problems (0 errors, 4 warnings)
+
+husky - pre-commit hook exited with code 1 (error)
+2025-08-04T14:09:15.810+08:00 [info] > git config --get-all user.name [73ms]
+2025-08-04T14:09:15.893+08:00 [info] > git config --get-all user.email [79ms]
+2025-08-04T14:09:16.001+08:00 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [92ms]
+2025-08-04T14:09:16.002+08:00 [info] > git config --get commit.template [101ms]
+2025-08-04T14:09:16.130+08:00 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [62ms]
+2025-08-04T14:09:16.132+08:00 [info] > git status -z -uall [66ms]
+2025-08-04T14:09:18.893+08:00 [info] > git config --get commit.template [46ms]
+2025-08-04T14:09:18.898+08:00 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [48ms]
+2025-08-04T14:09:18.953+08:00 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [48ms]
+2025-08-04T14:09:18.954+08:00 [info] > git status -z -uall [53ms]
