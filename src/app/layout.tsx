@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -116,6 +116,7 @@ export default async function RootLayout({
           </SiteProvider>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId='G-XTYE2NV5SR' />
     </html>
   );
 }

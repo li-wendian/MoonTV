@@ -2,34 +2,33 @@
 
 'use client';
 
-import { AlertCircle, CheckCircle } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Suspense, useEffect, useState } from 'react';
 
-import { checkForUpdates, CURRENT_VERSION, UpdateStatus } from '@/lib/version';
+import { CURRENT_VERSION } from '@/lib/version';
 
 import { useSite } from '@/components/SiteProvider';
 import { ThemeToggle } from '@/components/ThemeToggle';
 
 // 版本显示组件
 function VersionDisplay() {
-  const [updateStatus, setUpdateStatus] = useState<UpdateStatus | null>(null);
-  const [isChecking, setIsChecking] = useState(true);
+  // const [updateStatus, setUpdateStatus] = useState<UpdateStatus | null>(null);
+  // const [isChecking, setIsChecking] = useState(true);
 
-  useEffect(() => {
-    const checkUpdate = async () => {
-      try {
-        const status = await checkForUpdates();
-        setUpdateStatus(status);
-      } catch (_) {
-        // do nothing
-      } finally {
-        setIsChecking(false);
-      }
-    };
+  // useEffect(() => {
+  //   const checkUpdate = async () => {
+  //     try {
+  //       const status = await checkForUpdates();
+  //       setUpdateStatus(status);
+  //     } catch (_) {
+  //       // do nothing
+  //     } finally {
+  //       setIsChecking(false);
+  //     }
+  //   };
 
-    checkUpdate();
-  }, []);
+  //   checkUpdate();
+  // }, []);
 
   return (
     <button
@@ -39,7 +38,7 @@ function VersionDisplay() {
       className='absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400 transition-colors cursor-pointer'
     >
       <span className='font-mono'>v{CURRENT_VERSION}</span>
-      {!isChecking && updateStatus !== UpdateStatus.FETCH_FAILED && (
+      {/* {!isChecking && updateStatus !== UpdateStatus.FETCH_FAILED && (
         <div
           className={`flex items-center gap-1.5 ${
             updateStatus === UpdateStatus.HAS_UPDATE
@@ -62,7 +61,7 @@ function VersionDisplay() {
             </>
           )}
         </div>
-      )}
+      )} */}
     </button>
   );
 }
