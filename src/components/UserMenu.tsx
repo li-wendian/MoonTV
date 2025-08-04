@@ -2,7 +2,7 @@
 
 'use client';
 
-import { KeyRound, LogOut, Settings, Shield, User, X } from 'lucide-react';
+import { KeyRound, Settings, Shield, User, X } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
@@ -389,16 +389,16 @@ export const UserMenu: React.FC = () => {
           <div className='my-1 border-t border-gray-200 dark:border-gray-700'></div>
 
           {/* 登出按钮 */}
-          <button
+          {/* <button
             onClick={handleLogout}
             className='w-full px-3 py-2 text-left flex items-center gap-2.5 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors text-sm'
           >
             <LogOut className='w-4 h-4' />
             <span className='font-medium'>登出</span>
-          </button>
+          </button> */}
 
           {/* 分割线 */}
-          <div className='my-1 border-t border-gray-200 dark:border-gray-700'></div>
+          {/* <div className='my-1 border-t border-gray-200 dark:border-gray-700'></div> */}
 
           {/* 版本信息 */}
           <button
